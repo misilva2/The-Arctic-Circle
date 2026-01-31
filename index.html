@@ -7,15 +7,19 @@
     <meta name="keywords" content="restaurant, dining, cuisine, food">
     <meta name="author" content="The Arctic Circle">
     <title>The Arctic Circle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee&family=Bungee+Shade&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="container">
             <div class="logo">
-                <img src="img/IMG_6793.JPEG" alt="The Arctic Circle Logo" width="35%" height="35%">
+                <img src="img/IMG_6793.JPEG" alt="The Arctic Circle logo">
                 <h1>THE ARCTIC CIRCLE</h1>
             </div>
             <ul class="nav-links">
@@ -25,6 +29,11 @@
                 <li><a href="#merchandise">MERCHANDISE</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
+            <div class="nav-actions">
+                <button class="btn btn-secondary" id="theme-toggle" type="button" aria-pressed="false">
+                    Switch to Night Mode
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -32,20 +41,27 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <h2>WELCOME TO THE ARCTIC CIRCLE</h2>
-            <p>Our story is simple: a family with deep roots in Southern Arizona,  
-                a community hungry for the flavors of the past,
-                and a mission to bring back the burger joint everyone remembers</p>
+            <p>
+                Our story is simple: a family with deep roots in Southern Arizona, a community
+                hungry for the flavors of the past, and a mission to bring back the burger joint
+                everyone remembers.
+            </p>
             <a href="#contact" class="btn btn-primary">Place an Order</a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
                 <h2>ABOUT US</h2>
-                <p>Founded in 2025, our restaurant has been serving the community with passion and dedication. We pride ourselves on great quality ingredients and innovative culinary techniques. Family-owned and operated, we are committed to providing an unforgettable burgers for you and your family.</p>
+                <p>
+                    Founded in 2025, our restaurant has served the community with passion and dedication.
+                    We pride ourselves on high-quality ingredients and fresh, innovative techniques.
+                    Family-owned and operated, we are committed to delivering an unforgettable burger
+                    experience for you and your family.
+                </p>
             </div>
         </section>
 
@@ -61,8 +77,8 @@
         <section id="merchandise" class="merchandise">
             <div class="container">
                 <h2>ONLINE STORE COMING SOON</h2>
-                <h3>Physical shirts are available for purchase at The Arctic Circle</h3>
-                <p><strong>Address:</strong> 888 SR-92, Bisbee, AZ, 85603</p>
+                <h3>Physical shirts are available for purchase at The Arctic Circle.</h3>
+                <p><strong>Address:</strong> 888 SR-92, Bisbee, AZ 85603</p>
             </div>
         </section>
 
@@ -71,10 +87,10 @@
             <div class="container">
                 <h2>PLACE AN ORDER</h2>
                 <div class="contact-info">
-                    <p><strong>Phone:</strong> coming soon</p>
-                    <p><strong>Email:</strong> coming soon</p>
-                    <p><strong>Address:</strong> 888 SR-92, Bisbee, AZ, 85603</p>
-                    <p><strong>Hours:</strong> Thu-Sat 11:00 AM - 5:30 PM</p>
+                    <p><strong>Phone:</strong> Coming soon</p>
+                    <p><strong>Email:</strong> Coming soon</p>
+                    <p><strong>Address:</strong> 888 SR-92, Bisbee, AZ 85603</p>
+                    <p><strong>Hours:</strong> Thu–Sat, 11:00 AM–5:30 PM</p>
                 </div>
             </div>
         </section>
