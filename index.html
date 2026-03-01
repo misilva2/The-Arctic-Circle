@@ -9,7 +9,7 @@
     <title>The Arctic Circle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee&family=Bungee+Shade&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bungee:wght@400&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -64,8 +64,9 @@
         <!-- Menu Section -->
         <section id="menu" class="menu">
             <div class="container">
-                <h2>OUR MENU IS COMING SOON</h2>
-                <h3>Stay tuned for juicy burgers and creamy shakes!</h3>
+                <h2>OUR MENU</h2>
+                <h3>Classic favorites from The Arctic Circle.</h3>
+                <div id="menu-gallery" class="menu-gallery" aria-live="polite"></div>
             </div>
         </section>
 
@@ -74,7 +75,12 @@
             <div class="container">
                 <h2>ONLINE STORE COMING SOON</h2>
                 <h3>Physical shirts are available for purchase at The Arctic Circle.</h3>
-                <p><strong>Address:</strong> 894 SR-92, Bisbee, AZ 85603</p>
+                <p>
+                    <strong>Address:</strong>
+                    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603" target="_blank" rel="noopener noreferrer">
+                        894 SR-92, Bisbee, AZ 85603
+                    </a>
+                </p>
             </div>
         </section>
 
@@ -83,10 +89,21 @@
             <div class="container">
                 <h2>PLACE AN ORDER</h2>
                 <div class="contact-info">
-                    <p><strong>Phone:</strong> (520) 353-4334</p>
+                    <p>
+                        <strong>Phone:</strong>
+                        <a class="map-link" href="tel:+15203534334">(520) 353-4334</a>
+                    </p>
                     <p><strong>Email:</strong> Coming soon</p>
-                    <p><strong>Address:</strong> 894 SR-92, Bisbee, AZ 85603</p>
-                    <p><strong>Hours:</strong> Thu–Sat, 11:00 AM–5:30 PM</p>
+                    <p>
+                        <strong>Address:</strong>
+                        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603" target="_blank" rel="noopener noreferrer">
+                            894 SR-92, Bisbee, AZ 85603
+                        </a>
+                    </p>
+                    <p><strong>Hours:</strong> Fri–Sun, 11:00 AM–5:30 PM</p>
+                    <a class="btn btn-primary directions-btn" href="https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603" target="_blank" rel="noopener noreferrer">
+                        Get Directions
+                    </a>
                 </div>
             </div>
         </section>
@@ -99,6 +116,7 @@
         </div>
     </footer>
 
+    <script src="menu-images.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

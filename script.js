@@ -29,3 +29,20 @@ if (themeToggle) {
         updateToggleLabel(nextTheme);
     });
 }
+
+const menuGallery = document.getElementById("menu-gallery");
+const images = Array.isArray(window.menuImages) ? window.menuImages : [];
+
+if (menuGallery) {
+    if (!images.length) {
+        menuGallery.innerHTML = "<p class=\"menu-empty\">Menu images are coming soon.</p>";
+    } else {
+        menuGallery.innerHTML = images
+            .map(({ src, alt }) => `
+                <figure class="menu-image-card">
+                    <img src="${src}" alt="${alt || "Menu item"}" loading="lazy">
+                </figure>
+            `)
+            .join("");
+    }
+}
