@@ -3,15 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover authentic cuisine and fine dining at our restaurant.">
-    <meta name="keywords" content="restaurant, dining, cuisine, food">
+    <title>The Arctic Circle Bisbee, AZ | Classic Burgers & 50s Drive-In</title>
+    <meta name="description" content="Visit The Arctic Circle in Bisbee, AZ for classic burgers, 50s drive-in favorites, and family-friendly dining. Open Friday to Sunday.">
     <meta name="author" content="The Arctic Circle">
-    <title>The Arctic Circle</title>
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://arcticcirclebisbeeaz.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="The Arctic Circle">
+    <meta property="og:title" content="The Arctic Circle Bisbee, AZ | Classic Burgers & 50s Drive-In">
+    <meta property="og:description" content="Classic 50s drive-in flavor in Bisbee, Arizona. Find our menu, hours, and directions.">
+    <meta property="og:url" content="https://arcticcirclebisbeeaz.com/">
+    <meta property="og:image" content="https://arcticcirclebisbeeaz.com/img/IMG_6793.JPEG">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Arctic Circle Bisbee, AZ | Classic Burgers & 50s Drive-In">
+    <meta name="twitter:description" content="Classic 50s drive-in flavor in Bisbee, Arizona. Find our menu, hours, and directions.">
+    <meta name="twitter:image" content="https://arcticcirclebisbeeaz.com/img/IMG_6793.JPEG">
+
+    <meta name="geo.region" content="US-AZ">
+    <meta name="geo.placename" content="Bisbee">
+    <meta name="theme-color" content="#1149a6">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bungee:wght@400&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="img/hero-1024.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Restaurant",
+                    "name": "The Arctic Circle",
+                    "url": "https://arcticcirclebisbeeaz.com/",
+                    "image": "https://arcticcirclebisbeeaz.com/img/IMG_6793.JPEG",
+                    "telephone": "+1-520-353-4334",
+                    "servesCuisine": "American",
+                    "priceRange": "$$",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "894 SR-92",
+                        "addressLocality": "Bisbee",
+                        "addressRegion": "AZ",
+                        "postalCode": "85603",
+                        "addressCountry": "US"
+                    },
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Friday",
+                                "Saturday",
+                                "Sunday"
+                            ],
+                            "opens": "11:00",
+                            "closes": "17:30"
+                        }
+                    ],
+                    "sameAs": [
+                        "https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603",
+                        "https://www.facebook.com/profile.php?id=61587456656015"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "The Arctic Circle",
+                    "url": "https://arcticcirclebisbeeaz.com/"
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -19,8 +85,8 @@
     <nav class="navbar" aria-label="Primary">
         <div class="container">
             <div class="logo">
-                <img src="img/IMG_6793.JPEG" alt="The Arctic Circle logo">
-                <h1>THE ARCTIC CIRCLE</h1>
+                <img src="img/logo-144.webp" alt="The Arctic Circle logo" width="72" height="72" decoding="async" fetchpriority="high">
+                <p class="logo-title">THE ARCTIC CIRCLE</p>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">HOME</a></li>
@@ -35,14 +101,14 @@
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h2>WELCOME TO THE ARCTIC CIRCLE</h2>
+            <h1>WELCOME TO THE ARCTIC CIRCLE</h1>
             <h3>Classic 50s Drive-In Flavor</h3>
             <p>
                 Our story is simple: a family with deep roots in Southern Arizona, a community
                 hungry for the flavors of the past, and a mission to bring back the burger joint
                 everyone remembers.
             </p>
-            <a href="#contact" class="btn btn-primary">Place an Order</a>
+            <a href="#contact" class="btn btn-primary">Call to Place an Order</a>
         </div>
     </header>
 
@@ -66,7 +132,22 @@
             <div class="container">
                 <h2>OUR MENU</h2>
                 <h3>Classic favorites from The Arctic Circle.</h3>
-                <div id="menu-gallery" class="menu-gallery" aria-live="polite"></div>
+                <p>Browse our burger stand staples, from signature burgers to classic sides and drinks.</p>
+                <div id="menu-gallery" class="menu-gallery" aria-live="polite">
+                    <figure class="menu-image-card">
+                        <picture>
+                            <source
+                                srcset="img/menu-600.webp 600w, img/menu-900.webp 900w, img/menu-1200.webp 1200w"
+                                sizes="(max-width: 560px) calc(100vw - 2.5rem), (max-width: 1024px) calc(100vw - 3.6rem), 700px"
+                                type="image/webp"
+                            >
+                            <img src="img/menu.png" alt="The Arctic Circle menu with burgers, sides, shakes, and drinks" width="1200" height="1600" loading="lazy" decoding="async">
+                        </picture>
+                    </figure>
+                </div>
+                <noscript>
+                    <p>JavaScript is off. You can still view our full menu image above and call (520) 353-4334 to order.</p>
+                </noscript>
             </div>
         </section>
 
@@ -87,13 +168,19 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2>PLACE AN ORDER</h2>
+                <h2>CALL TO PLACE AN ORDER</h2>
                 <div class="contact-info">
                     <p>
                         <strong>Phone:</strong>
                         <a class="map-link" href="tel:+15203534334">(520) 353-4334</a>
                     </p>
                     <p><strong>Email:</strong> Coming soon</p>
+                    <p>
+                        <strong>Facebook:</strong>
+                        <a class="map-link" href="https://www.facebook.com/profile.php?id=61587456656015" target="_blank" rel="noopener noreferrer">
+                            Follow us on Facebook
+                        </a>
+                    </p>
                     <p>
                         <strong>Address:</strong>
                         <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603" target="_blank" rel="noopener noreferrer">
@@ -115,8 +202,5 @@
             <p>&copy; 2025 The Arctic Circle. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="menu-images.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
