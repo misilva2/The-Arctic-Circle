@@ -205,6 +205,10 @@ h3 {
     color: rgba(255, 255, 255, 0.92);
 }
 
+.hero-review-btn {
+    margin-top: 0.8rem;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -227,6 +231,19 @@ h3 {
 .btn-primary:hover {
     transform: translateY(-2px);
     background: #eef4ff;
+}
+
+.btn-google-reviews {
+    margin-top: 0.85rem;
+    background: #fbbc04;
+    color: #202124;
+    border-color: #f2a600;
+    box-shadow: 0 10px 22px rgba(32, 33, 36, 0.18);
+}
+
+.btn-google-reviews:hover {
+    transform: translateY(-2px);
+    background: #ffd95f;
 }
 
 .about,
