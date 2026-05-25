@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bungee:wght@400&family=Righteous&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="img/hero-1024.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="img/IMG_0257.png">
 
     <script type="application/ld+json">
         {
@@ -43,6 +43,7 @@
                     "url": "https://arcticcirclebisbeeaz.com/",
                     "image": "https://arcticcirclebisbeeaz.com/img/IMG_6793.JPEG",
                     "telephone": "+1-520-353-4334",
+                    "email": "arcticcircle662@gmail.com",
                     "servesCuisine": "American",
                     "priceRange": "$$",
                     "address": {
@@ -58,16 +59,24 @@
                             "@type": "OpeningHoursSpecification",
                             "dayOfWeek": [
                                 "Friday",
-                                "Saturday",
-                                "Sunday"
+                                "Saturday"
                             ],
                             "opens": "11:00",
                             "closes": "17:30"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Sunday"
+                            ],
+                            "opens": "11:00",
+                            "closes": "15:30"
                         }
                     ],
                     "sameAs": [
                         "https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603",
-                        "https://www.facebook.com/profile.php?id=61587456656015"
+                        "https://www.facebook.com/profile.php?id=61587456656015",
+                        "https://www.instagram.com/thearcticcirclebisbee/"
                     ]
                 },
                 {
@@ -85,7 +94,7 @@
     <nav class="navbar" aria-label="Primary">
         <div class="container">
             <div class="logo">
-                <img src="img/logo-144.webp" alt="The Arctic Circle logo" width="72" height="72" decoding="async" fetchpriority="high">
+                <img src="img/IMG_0257.png" alt="The Arctic Circle logo" width="72" height="72" decoding="async" fetchpriority="high">
                 <p class="logo-title">THE ARCTIC CIRCLE</p>
             </div>
             <ul class="nav-links">
@@ -175,11 +184,20 @@
                         <strong>Phone:</strong>
                         <a class="map-link" href="tel:+15203534334">(520) 353-4334</a>
                     </p>
-                    <p><strong>Email:</strong> Coming soon</p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a class="map-link" href="mailto:arcticcircle662@gmail.com">arcticcircle662@gmail.com</a>
+                    </p>
                     <p>
                         <strong>Facebook:</strong>
                         <a class="map-link" href="https://www.facebook.com/profile.php?id=61587456656015" target="_blank" rel="noopener noreferrer">
                             Follow us on Facebook
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Instagram:</strong>
+                        <a class="map-link" href="https://www.instagram.com/thearcticcirclebisbee/" target="_blank" rel="noopener noreferrer">
+                            Follow us on Instagram
                         </a>
                     </p>
                     <p>
@@ -188,13 +206,36 @@
                             894 SR-92, Bisbee, AZ 85603
                         </a>
                     </p>
-                    <p><strong>Hours:</strong> Fri–Sun, 11:00 AM–5:30 PM</p>
+                    <p><strong>Hours:</strong> Fri–Sat, 11:00 AM–5:30 PM | Sun, 11:00 AM–3:30 PM</p>
                     <a class="btn btn-primary directions-btn" href="https://www.google.com/maps/search/?api=1&query=894+SR-92+Bisbee+AZ+85603" target="_blank" rel="noopener noreferrer">
                         Get Directions
                     </a>
                     <a class="btn btn-google-reviews" href="https://www.google.com/maps/place/Arctic+Circle/@31.402477,-109.9204183,17z/data=!3m1!4b1!4m6!3m5!1s0x86d0b50074abc139:0x81839bb2daa00483!8m2!3d31.4024724!4d-109.9178434!16s%2Fg%2F11y_18lp7m?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                         Read &amp; Leave a Google Review
                     </a>
+
+                    <div class="review-box" aria-labelledby="review-form-title">
+                        <h3 id="review-form-title">Leave a Review</h3>
+                        <p>Share your experience and submit your review directly to us.</p>
+                        <p id="review-success" class="review-success" role="status" aria-live="polite" tabindex="-1" hidden>
+                            Thank you for your review. We appreciate your feedback.
+                        </p>
+                        <form class="review-form" action="https://formsubmit.co/arcticcircle662@gmail.com" method="post">
+                            <input type="hidden" name="_subject" value="Arctic Circle Review">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://arcticcirclebisbeeaz.com/?review=success#contact">
+                            <label for="review-name">Name</label>
+                            <input id="review-name" name="Name" type="text" autocomplete="name" required>
+
+                            <label for="review-email">Email</label>
+                            <input id="review-email" name="Email" type="email" autocomplete="email" required>
+
+                            <label for="review-message">Review</label>
+                            <textarea id="review-message" name="Review" rows="5" required></textarea>
+
+                            <button class="btn btn-primary" type="submit">Send Review</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,5 +247,21 @@
             <p>&copy; 2025 The Arctic Circle. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const reviewStatus = params.get("review");
+            const successMessage = document.getElementById("review-success");
+            if (reviewStatus === "success" && successMessage) {
+                successMessage.hidden = false;
+                successMessage.focus({ preventScroll: true });
+                params.delete("review");
+                const nextQuery = params.toString();
+                const nextUrl = nextQuery ? `${window.location.pathname}?${nextQuery}${window.location.hash}` : `${window.location.pathname}${window.location.hash}`;
+                window.history.replaceState({}, "", nextUrl);
+            }
+        })();
+    </script>
 </body>
 </html>
