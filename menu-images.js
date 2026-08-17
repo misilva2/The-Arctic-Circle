@@ -1,6 +1,6 @@
 window.menuImages = [
     {
-        src: "img/menu.png",
+        src: "img/image.png",
         alt: "The Arctic Circle full menu"
     }
 ];

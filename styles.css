@@ -25,12 +25,14 @@ body {
     font-family: "Atkinson Hyperlegible", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     color: var(--text);
     line-height: 1.7;
+    font-size: 16px;
     background:
         radial-gradient(circle at 18% 12%, rgba(31, 111, 229, 0.1) 0%, transparent 35%),
         radial-gradient(circle at 92% 3%, rgba(17, 73, 166, 0.1) 0%, transparent 28%),
         var(--white);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -42,6 +44,12 @@ a,
 button,
 .btn {
     touch-action: manipulation;
+    min-height: 44px;
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
 }
 
 .container {
@@ -143,7 +151,11 @@ h3 {
     font-size: 0.86rem;
     border: 2px solid transparent;
     border-radius: 999px;
-    padding: 0.45rem 0.85rem;
+    padding: 0.7rem 0.9rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.2s ease;
 }
 
@@ -167,7 +179,7 @@ h3 {
     padding: clamp(6rem, 9vw, 8.5rem) 1.25rem;
     background:
         linear-gradient(130deg, rgba(10, 42, 102, 0.87), rgba(17, 73, 166, 0.74)),
-    url("img/hero-1024.webp") center / cover no-repeat;
+        url("img/IMG_0100.jpeg") center / cover no-repeat;
 }
 
 .hero::after {
@@ -214,6 +226,7 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 0.82rem 1.65rem;
+    min-height: 48px;
     border-radius: 999px;
     border: 2px solid transparent;
     text-decoration: none;
@@ -488,7 +501,7 @@ h3 {
         padding: clamp(4.6rem, 8vw, 6.5rem) 1rem;
         background:
             linear-gradient(130deg, rgba(10, 42, 102, 0.84), rgba(17, 73, 166, 0.7)),
-            url("img/hero-1024.webp") center / cover no-repeat;
+            url("img/IMG_0100.jpeg") center / cover no-repeat;
     }
 
     .about .container,
@@ -519,15 +532,17 @@ h3 {
     }
 
     .nav-links a {
-        display: block;
+        display: flex;
         text-align: center;
-        font-size: 0.8rem;
-        padding: 0.48rem 0.35rem;
+        font-size: 0.78rem;
+        padding: 0.6rem 0.35rem;
+        min-height: 46px;
     }
 
     .btn {
         width: 100%;
         max-width: 260px;
+        min-height: 48px;
     }
 
     .review-form .btn {
@@ -548,7 +563,7 @@ h3 {
         padding-bottom: 4.5rem;
         background:
             linear-gradient(130deg, rgba(10, 42, 102, 0.82), rgba(17, 73, 166, 0.68)),
-            url("img/hero-640.webp") center / cover no-repeat;
+            url("img/IMG_0100.jpeg") center / cover no-repeat;
     }
 
     .menu-image-card img {
@@ -560,6 +575,26 @@ h3 {
     .hero {
         background:
             linear-gradient(130deg, rgba(10, 42, 102, 0.87), rgba(17, 73, 166, 0.74)),
-            url("img/hero-1600.webp") center / cover no-repeat;
+            url("img/IMG_0100.jpeg") center / cover no-repeat;
+    }
+}
+
+@media (max-height: 540px) and (orientation: landscape) {
+    .hero {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --border: #6f8ec9;
+        --muted: #1f3f7a;
+    }
+
+    .btn-primary,
+    .btn-google-reviews,
+    .map-link {
+        text-decoration-thickness: 3px;
     }
 }
