@@ -308,35 +308,120 @@ h3 {
     margin: 0.6rem auto;
 }
 
-.menu-gallery {
+.menu-notice {
+    display: inline-block;
+    margin: 0.1rem 0 1.5rem;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    background: var(--blue-100);
+    color: var(--blue-900);
+    font-weight: 700;
+}
+
+.menu-sections {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1.4rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    text-align: left;
 }
 
-.menu-image-card {
+.menu-category {
+    min-width: 0;
+    padding: clamp(1rem, 2vw, 1.5rem);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    background: var(--white);
-    width: min(700px, 100%);
-    margin: 0 auto;
+    border-radius: 16px;
+    background: linear-gradient(180deg, var(--white), #f8fbff);
 }
 
-.menu-image-card img {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    aspect-ratio: auto;
-    object-fit: contain;
-    display: block;
+.menu-category:first-child {
+    grid-column: 1 / -1;
 }
 
-.menu-empty {
+.menu .menu-category h3 {
+    margin-bottom: 0.5rem;
+    color: var(--blue-900);
+    font-size: clamp(1.2rem, 0.8vw + 1rem, 1.5rem);
+}
+
+.menu-category-description {
     color: var(--muted);
-    font-size: 1rem;
-    margin: 0.75rem 0 0;
+    margin-bottom: 0.8rem;
+}
+
+.menu-table-wrap {
+    overflow-x: auto;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.menu-table th,
+.menu-table td {
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-table thead th {
+    color: var(--blue-900);
+    background: var(--blue-100);
+}
+
+.menu-table tbody th {
+    font-weight: 700;
+}
+
+.menu-table td {
+    color: var(--blue-900);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.menu-table tbody tr:last-child th,
+.menu-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.menu-item-description {
+    display: block;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.menu-item-list {
+    list-style: none;
+}
+
+.menu-item-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-item-list li:last-child {
+    border-bottom: 0;
+}
+
+.menu-item-list strong {
+    color: var(--blue-900);
+    white-space: nowrap;
+}
+
+.menu-drink-flavors {
+    margin: 0.8rem 0 0;
+}
+
+.menu-thanks {
+    margin: 1.5rem 0 0;
+    color: var(--blue-700);
+    font-family: "Righteous", "Atkinson Hyperlegible", system-ui, sans-serif;
+    font-size: 1.2rem;
 }
 
 .menu h3,
@@ -512,10 +597,18 @@ h3 {
     }
 }
 
-@media (min-width: 900px) and (max-width: 1440px) {
-    .menu-gallery {
-        grid-template-columns: minmax(0, clamp(560px, 60vw, 700px));
-        justify-content: center;
+@media (max-width: 700px) {
+    .menu-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-category:first-child {
+        grid-column: auto;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        padding: 0.65rem 0.45rem;
     }
 }
 
@@ -566,9 +659,6 @@ h3 {
             url("img/IMG_0100.jpeg") center / cover no-repeat;
     }
 
-    .menu-image-card img {
-        min-height: 0;
-    }
 }
 
 @media (min-width: 1280px) {
