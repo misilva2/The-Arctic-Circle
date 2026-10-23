@@ -280,15 +280,13 @@ h3 {
 
 .about,
 .menu,
-.merchandise,
 .contact {
     padding: clamp(3.2rem, 5vw, 5rem) 0;
     content-visibility: auto;
     contain-intrinsic-size: 600px;
 }
 
-.about,
-.merchandise {
+.about {
     background: var(--white);
 }
 
@@ -299,7 +297,6 @@ h3 {
 
 .about .container,
 .menu .container,
-.merchandise .container,
 .contact .container {
     text-align: center;
     border: 1px solid var(--border);
@@ -311,7 +308,6 @@ h3 {
 
 .about h2,
 .menu h2,
-.merchandise h2,
 .contact h2 {
     font-size: clamp(1.75rem, 1.2vw + 1.4rem, 2.65rem);
     margin-bottom: 0.9rem;
@@ -319,7 +315,6 @@ h3 {
 }
 
 .about p,
-.merchandise p,
 .contact-info p {
     font-size: clamp(1rem, 0.35vw + 0.95rem, 1.12rem);
     color: var(--muted);
@@ -443,8 +438,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-.menu h3,
-.merchandise h3 {
+.menu h3 {
     font-size: clamp(1.1rem, 0.8vw + 1rem, 1.45rem);
     color: var(--blue-700);
     margin-bottom: 0.8rem;
@@ -459,8 +453,7 @@ h3 {
     margin: 1rem auto 0;
 }
 
-.contact-info strong,
-.merchandise strong {
+.contact-info strong {
     color: var(--blue-700);
 }
 
@@ -610,7 +603,6 @@ h3 {
 
     .about .container,
     .menu .container,
-    .merchandise .container,
     .contact .container {
         box-shadow: var(--shadow);
     }
@@ -664,7 +656,6 @@ h3 {
 
     .about .container,
     .menu .container,
-    .merchandise .container,
     .contact .container {
         border-radius: 16px;
         padding: 1.25rem;
